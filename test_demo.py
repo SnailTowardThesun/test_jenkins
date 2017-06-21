@@ -8,7 +8,7 @@ class TestDemo(unittest.TestCase):
         pass
 
     def testDemo(self):
-        self.assertEquals((2 * 5), 10, "test num failed!")
+        self.assertEquals((2 * 6), 10, "test num failed!")
         self.assertFalse(False, "test, boolen failed!")
         self.assertTrue(True, "test bool failed!")
 
