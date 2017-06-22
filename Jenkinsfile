@@ -10,9 +10,8 @@ pipeline {
 
     post {
         success {
-            mail to: 'hanvskun@hotmail.com',
-                 subject: "Failed Pipeline: ${currentBuild.fullDisplayName}",
-                 body: "Something is wrong with ${env.BUILD_URL}"
+            echo "build success"
+            cp main.py /home/hankun/main.py
         }
     }
 }
