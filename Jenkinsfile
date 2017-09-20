@@ -10,7 +10,6 @@ pipeline {
 
     post {
         success {
-            sh 'echo "build success"'
             cp main.py /home/hankun/main.py
         }
     }
